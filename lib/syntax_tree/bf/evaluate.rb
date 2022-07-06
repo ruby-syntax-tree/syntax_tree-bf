@@ -102,10 +102,8 @@ module SyntaxTree
       end
 
       def self.run(source, stdin: STDIN, stdout: STDOUT)
-        node = Parser.new(source).parse
         compiler = Compiler.new
-
-        compiler.visit(node)
+        Parser.new(source).parse.accept(compiler)
         Machine.new(compiler.insns, stdin: stdin, stdout: stdout).run
       end
     end

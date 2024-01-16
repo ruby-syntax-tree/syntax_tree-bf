@@ -1,3 +1,5 @@
+> :warning: Deprecated
+
 # SyntaxTree::Bf
 
 [![Build Status](https://github.com/ruby-syntax-tree/syntax_tree-bf/actions/workflows/main.yml/badge.svg)](https://github.com/ruby-syntax-tree/syntax_tree-bf/actions/workflows/main.yml)
